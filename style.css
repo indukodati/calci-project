@@ -14,7 +14,7 @@
 .calculator{
     background: black;
     padding: 25px;
-    border-radius: 5px;
+    /*border-radius: 5px;*/
 }
 .calculator form input{
     border: 0;
@@ -43,5 +43,5 @@ form input.equal{
     width: 140px;
 }
 .operator{
-    color: darkslategray;
+    color: white;
 }

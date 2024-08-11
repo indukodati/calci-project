@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>project1</title>
-    <link ref="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
@@ -14,9 +14,9 @@
                     <input type="text" name="display">
                 </div>
                 <div>
-                    <input type="button" value="AC" onclick="display.value += '' "class="operator">
-                    <input type="button" value="%" onclick="display.value = display.value.toString().slice(0,-1)">
-                    <input type="button" value="x" onclick="display.value += 'x' ">
+                    <input type="button" value="AC" onclick="display.value = '' "class="operator">
+                    <input type="button" value="x" onclick="display.value = display.value.toString().slice(0,-1)">
+                    <input type="button" value="%" onclick="display.value += '%' ">
                     <input type="button" value="/" onclick="display.value += '/' ">
                 </div>
                 <div>
@@ -41,10 +41,11 @@
                     <input type="button" value="00" onclick="display.value += '00' ">
                     <input type="button" value="0"  onclick="display.value += '0' ">
                     <input type="button" value="."  onclick="display.value += '.' ">
-                    <input type="button" value="="  onclick="display.value = eval(display.value)">
+                    <input type="button" value="="  onclick="display.value = eval(display.value)">/*strg -> int*/
                 </div>
             </form>
         </div>
     </div>
+    <script src="javascript.js"></script>
 </body>
 </html>
